@@ -7,7 +7,7 @@ tags: [Python, Windows]
 
 `pip`는 파이썬을 설치하면 포함되어 있는 툴로 패키지를 설치/제거하기 위해 기본적으로 활용하며, 보통 아래의 세 가지 구문이 제일 많이 사용될 것이다.
 
-```PowerShell
+```powershell
 > pip install <package_name1> <package_name2> ...    # 설치
 > pip uninstall <package_name1> <package_name2> ...  # 제거
 > pip list                                           # 설치된 패키지 목록
@@ -33,7 +33,7 @@ tags: [Python, Windows]
 
 제일 기본적으로 사용하는 방식이다.
 
-```PowerShell
+```powershell
 > pip install <package_name>
 ```
 
@@ -45,7 +45,7 @@ tags: [Python, Windows]
 
 모든 설치의 기본이 `.whl` 파일이라는 것을 이해하고 나면 PyPI에 찾고 있는 패키지가 없더라도 `.whl` 파일을 다른데서 구해서 설치가 가능하다. 이 때는 `<package_name>`이 아니라 `<package_file_name>.whl`로 파일 명을 직접 지정하면 된다.
 
-```PowerShell
+```powershell
 > pip install <package_file_name>.whl
 ```
 
@@ -55,7 +55,7 @@ PyPI가 일반적으로 파이썬에서 `.whl`을 다운받기 위한 기본 레
 
 인공지능 개발에서 많이 활용하는 PyTorch의 경우 PyPI에는 CPU 버전밖에 없으며, CUDA 버전을 구하기 위해서는 아래와 같이 다른 레포를 --index-url로 지정해 주어야 한다.
 
-```PowerShell
+```powershell
 > pip install torch --index-url https://download.pytorch.org/whl/cu121
 ```
 
